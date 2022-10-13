@@ -1,20 +1,18 @@
 import termcolor as colored
 
-str1 = input("Enter any string: ")
+year1 = input("Enter year of birth: ")
+city1 = input("Enter city of birth: ")
+nat1 = input("Enter nationality: ")
+gender1 = input("Enter gender: ")
 
 with open("D:\Python related lessons\Files for Practice\one_file.txt", mode='w') as f:
-    f.write(str1)
+    f.write(year1 + "     " + city1 + "     " + nat1 + "     " + gender1)
 
 with open("D:\Python related lessons\Files for Practice\one_file.txt", mode='r') as f1:
-    line1 = f1.readline().strip()
+    this_dict = {"Year": year1, "City": city1, "Nationality": nat1, "Gender": gender1}
+    print(this_dict)
 
-with open("D:\Python related lessons\Files for Practice\one_file.txt", mode='w') as f2:
-    f2.write(str1 + '\n')
-    f2.write(line1.lower() + '\n')
-    f2.write(line1.upper() + '\n')
 
 print("\nFile successfully edited!\n")
 
 f.close()
-f1.close()
-f2.close()
