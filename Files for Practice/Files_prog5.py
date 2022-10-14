@@ -7,8 +7,7 @@ with open("D:\Python related lessons\Files for Practice\one_file.txt", mode='w')
 
 with open("D:\Python related lessons\Files for Practice\one_file.txt", mode='r') as f1:
     line1 = f1.readline().strip()
-    line = line1.split()
-    print(line)
+    print(line1)
 
 
 print("\nFile successfully edited!\n")
